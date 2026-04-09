@@ -4,81 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PlanMate | Plan Better. Meet Smarter.</title>
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
+  <!-- Sticky Navbar -->
+  <header class="main-header">
     <nav class="navbar">
-      <div class="logo">PlanMate</div>
+      <div class="logo">PlanMate.</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html" class="btn">Login</a></li>
+        <li><a href="login.html" class="btn-primary">Login</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Plan Better. Meet Smarter.</h1>
+    <div class="hero-text animate-slide-up">
+      <h1>Plan Better.<br/>Meet Smarter.</h1>
       <p>
-        PlanMate helps study groups, clubs, and fellowships organize events,
-        assign tasks, track attendance, and manage contributions all in one place.
+        The clean and vibrant platform for groups to organize events, assign tasks, track attendance, and manage execution. Drop the chaotic chat threads.
       </p>
-      <a href="register.html" class="hero-btn">Get Started</a>
+      <div class="action-group">
+        <a href="register.html" class="btn-primary"><i class="ph ph-rocket-launch"></i> Get Started</a>
+        <a href="login.html" class="btn-secondary">Access Dashboard</a>
+      </div>
     </div>
-    <div class="hero-image">
-      <img src="https://via.placeholder.com/500x350" alt="PlanMate Illustration" />
+    
+    <div class="hero-image animate-fade-in delay-1">
+      <img src="images/hero_mockup.png" alt="PlanMate Dashboard" onerror="this.src='https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=1000&auto=format&fit=crop';" />
     </div>
   </section>
 
   <!-- Features Section -->
   <section class="features">
-    <h2>What PlanMate Can Do</h2>
-    <div class="feature-container">
+    <h2 class="animate-slide-up delay-2">Everything You Need for Group Success</h2>
+    
+    <div class="feature-container animate-fade-in delay-3">
+      
       <div class="feature-box">
+        <i class="ph ph-calendar-check feature-icon"></i>
         <h3>Create Events</h3>
-        <p>Schedule meetings, bonding sessions, discussions, and group activities.</p>
+        <p>Schedule meetings, sessions, discussions, and group activities effortlessly. Send invites and automatic reminders.</p>
       </div>
+
       <div class="feature-box">
+        <i class="ph ph-list-checks feature-icon"></i>
         <h3>Assign Tasks</h3>
-        <p>Delegate responsibilities like food, worship, presentations, and logistics.</p>
+        <p>Delegate responsibilities like logistics and presentations. Track progress in real-time with Kanban boards.</p>
       </div>
+
       <div class="feature-box">
+        <i class="ph ph-users-three feature-icon"></i>
         <h3>Track Attendance</h3>
-        <p>Know who is attending, unavailable, or maybe joining.</p>
+        <p>Know exactly who is coming, who is unavailable, and who might join. Manage headcounts effortlessly.</p>
       </div>
+
       <div class="feature-box">
+        <i class="ph ph-wallet feature-icon"></i>
         <h3>Manage Budget</h3>
-        <p>Track member contributions, expenses, and event budgets.</p>
+        <p>Track member contributions, log expenses, and ensure the event stays perfectly within budget limits.</p>
       </div>
+
     </div>
   </section>
 
-  <!-- Why PlanMate -->
-  <section class="why">
-    <h2>Why Choose PlanMate?</h2>
-    <p>
-      Instead of managing everything in scattered chats, PlanMate gives your group
-      one organized platform for planning, communication, and accountability.
-    </p>
-  </section>
-
-  <!-- Call To Action -->
-  <section class="cta">
-    <h2>Start Planning Your Next Event Today</h2>
-    <a href="register.html" class="hero-btn">Join PlanMate</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 PlanMate. All rights reserved.</p>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

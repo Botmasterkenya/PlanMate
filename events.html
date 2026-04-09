@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | PlanMate</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">PlanMate.</div>
+      <ul class="sidebar-menu">
+        <li><a href="Dashboard.html"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+        <li><a href="events.html" class="active"><i class="ph ph-calendar-blank"></i> Events</a></li>
+        <li><a href="task.html"><i class="ph ph-list-checks"></i> Tasks</a></li>
+        <li><a href="budget.html"><i class="ph ph-wallet"></i> Budget</a></li>
+        <li><a href="announcements.html"><i class="ph ph-megaphone"></i> Announcements</a></li>
+        <li style="margin-top: 30px;"><a href="index.html" style="color: #ef4444;"><i class="ph ph-sign-out"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <header class="top-bar animate-fade-in">
+        <h1 class="page-title">Events</h1>
+        <button class="btn-primary" onclick="openEventModal()"><i class="ph ph-plus"></i> Create Event</button>
+      </header>
+
+      <!-- Events Grid where JS will render cards -->
+      <section id="eventsGrid" class="content-grid animate-slide-up delay-1" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+         <!-- Dynamic empty state or events injected here by script.js -->
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Add Event Modal -->
+  <div id="eventModal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Create New Event</h3>
+        <button class="btn-close" onclick="closeEventModal()"><i class="ph ph-x"></i></button>
+      </div>
+      
+      <form id="createEventForm">
+        <div class="form-group">
+          <label for="eventName">Event Name</label>
+          <input type="text" id="eventName" class="form-control" placeholder="E.g., Team Sync" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="eventDate">Date & Time</label>
+          <input type="datetime-local" id="eventDate" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="eventDescription">Description</label>
+          <textarea id="eventDescription" class="form-control" rows="3" placeholder="Brief event details..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-primary" style="width: 100%;">Save Event</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

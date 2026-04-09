@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Announcements | PlanMate</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">PlanMate.</div>
+      <ul class="sidebar-menu">
+        <li><a href="Dashboard.html"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+        <li><a href="events.html"><i class="ph ph-calendar-blank"></i> Events</a></li>
+        <li><a href="task.html"><i class="ph ph-list-checks"></i> Tasks</a></li>
+        <li><a href="budget.html"><i class="ph ph-wallet"></i> Budget</a></li>
+        <li><a href="announcements.html" class="active"><i class="ph ph-megaphone"></i> Announcements</a></li>
+        <li style="margin-top: 30px;"><a href="index.html" style="color: #ef4444;"><i class="ph ph-sign-out"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <header class="top-bar animate-fade-in">
+        <h1 class="page-title">Announcements</h1>
+        <button class="btn-primary" onclick="showToast('Create Announcement coming soon.', 'info')"><i class="ph ph-plus"></i> Post Update</button>
+      </header>
+
+      <!-- Announcement Feed -->
+      <section class="card-section card animate-slide-up delay-1" style="padding: 30px; border-radius: var(--border-radius); max-width: 800px;">
+        
+        <div class="list-container">
+           <div class="empty-state">
+              <i class="ph ph-megaphone"></i>
+              <p>It's quiet in here... Post an announcement to notify your group.</p>
+            </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

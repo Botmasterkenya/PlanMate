@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | PlanMate</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar animate-fade-in">
+      <div class="sidebar-brand">PlanMate.</div>
+      <ul class="sidebar-menu">
+        <li><a href="Dashboard.html" class="active"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+        <li><a href="events.html"><i class="ph ph-calendar-blank"></i> Events</a></li>
+        <li><a href="task.html"><i class="ph ph-list-checks"></i> Tasks</a></li>
+        <li><a href="budget.html"><i class="ph ph-wallet"></i> Budget</a></li>
+        <li><a href="announcements.html"><i class="ph ph-megaphone"></i> Announcements</a></li>
+        <li style="margin-top: 30px;"><a href="index.html" style="color: #ef4444;"><i class="ph ph-sign-out"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Top Bar -->
+      <header class="top-bar animate-fade-in delay-1">
+        <h1 class="page-title">Welcome back! 👋</h1>
+        <div class="user-profile">
+          <span style="color: var(--text-secondary); font-weight: 500;">User Account</span>
+          <div class="avatar" style="width: 45px; height: 45px; border-radius: 50%; background: #e2e8f0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #64748b;">ME</div>
+        </div>
+      </header>
+
+      <!-- Stats Grid -->
+      <section class="stats-grid animate-slide-up delay-1">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="ph ph-calendar-check"></i></div>
+          <div class="stat-details">
+            <h4>Upcoming Events</h4>
+            <h2>0</h2>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="ph ph-list-numbers"></i></div>
+          <div class="stat-details">
+            <h4>Pending Tasks</h4>
+            <h2>0</h2>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="ph ph-wallet"></i></div>
+          <div class="stat-details">
+            <h4>Budget Utilized</h4>
+            <h2>$0</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Grid -->
+      <section class="content-grid animate-slide-up delay-2">
+        
+        <!-- Left: Upcoming Events -->
+        <div class="card-section card" style="padding: 30px;">
+          <div class="section-header">
+            <h3>Upcoming Events</h3>
+            <a href="events.html" class="btn-secondary" style="padding: 6px 16px; font-size: 13px;">View All</a>
+          </div>
+          
+          <div class="list-container">
+            <div class="empty-state">
+              <i class="ph ph-calendar-plus"></i>
+              <p>Nothing on the schedule. Head to the Events tab to create your first event.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: My Tasks -->
+        <div class="card-section card" style="padding: 30px;">
+          <div class="section-header">
+            <h3>My Pending Tasks</h3>
+            <a href="task.html" class="btn-secondary" style="padding: 6px 16px; font-size: 13px;">Go to Board</a>
+          </div>
+
+          <div class="list-container">
+             <div class="empty-state" style="padding: 40px 10px;">
+              <i class="ph ph-list-checks"></i>
+              <p>You're all caught up! No tasks are assigned to you currently.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

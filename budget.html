@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget | PlanMate</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">PlanMate.</div>
+      <ul class="sidebar-menu">
+        <li><a href="Dashboard.html"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+        <li><a href="events.html"><i class="ph ph-calendar-blank"></i> Events</a></li>
+        <li><a href="task.html"><i class="ph ph-list-checks"></i> Tasks</a></li>
+        <li><a href="budget.html" class="active"><i class="ph ph-wallet"></i> Budget</a></li>
+        <li><a href="announcements.html"><i class="ph ph-megaphone"></i> Announcements</a></li>
+        <li style="margin-top: 30px;"><a href="index.html" style="color: #ef4444;"><i class="ph ph-sign-out"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <header class="top-bar animate-fade-in">
+        <h1 class="page-title">Budget Tracker</h1>
+        <button class="btn-primary" onclick="showToast('Add Expense Functionality coming soon.', 'info')"><i class="ph ph-plus"></i> Add Transaction</button>
+      </header>
+
+      <!-- Budget Stats -->
+      <section class="stats-grid animate-slide-up delay-1">
+        <div class="stat-card" style="border-left: 4px solid #10b981;">
+          <div class="stat-icon" style="background: #ecfdf5; color: #10b981;"><i class="ph ph-money"></i></div>
+          <div class="stat-details">
+            <h4>Total Collected</h4>
+            <h2>$0.00</h2>
+          </div>
+        </div>
+        <div class="stat-card" style="border-left: 4px solid #ef4444;">
+          <div class="stat-icon" style="background: #fef2f2; color: #ef4444;"><i class="ph ph-receipt"></i></div>
+          <div class="stat-details">
+            <h4>Total Expenses</h4>
+            <h2>$0.00</h2>
+          </div>
+        </div>
+        <div class="stat-card" style="border-left: 4px solid var(--accent-primary);">
+          <div class="stat-icon"><i class="ph ph-vault"></i></div>
+          <div class="stat-details">
+            <h4>Available Balance</h4>
+            <h2>$0.00</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transactions List -->
+      <section class="card-section card animate-slide-up delay-2" style="padding: 30px; border-radius: var(--border-radius); max-width: 800px;">
+        <div class="section-header">
+          <h3>Recent Transactions</h3>
+        </div>
+
+        <div class="list-container">
+           <div class="empty-state">
+              <i class="ph ph-receipt"></i>
+              <p>No transactions recorded yet. Start tracking your budget by adding a transaction.</p>
+            </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

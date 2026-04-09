@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks | PlanMate</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">PlanMate.</div>
+      <ul class="sidebar-menu">
+        <li><a href="Dashboard.html"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+        <li><a href="events.html"><i class="ph ph-calendar-blank"></i> Events</a></li>
+        <li><a href="task.html" class="active"><i class="ph ph-list-checks"></i> Tasks</a></li>
+        <li><a href="budget.html"><i class="ph ph-wallet"></i> Budget</a></li>
+        <li><a href="announcements.html"><i class="ph ph-megaphone"></i> Announcements</a></li>
+        <li style="margin-top: 30px;"><a href="index.html" style="color: #ef4444;"><i class="ph ph-sign-out"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <header class="top-bar animate-fade-in">
+        <h1 class="page-title">Task Board</h1>
+        <button class="btn-primary" onclick="showToast('Add Task functionality coming soon.', 'info')"><i class="ph ph-plus"></i> New Task</button>
+      </header>
+
+      <!-- Kanban Board (Empty) -->
+      <section class="content-grid animate-slide-up delay-1" style="grid-template-columns: repeat(3, 1fr);">
+        
+        <!-- TODO Column -->
+        <div class="card-section card" style="padding: 20px; background: #f8fafc; box-shadow: none;">
+          <div class="section-header" style="border-bottom: 1px solid var(--border); padding-bottom: 15px;">
+            <h3>To Do</h3>
+          </div>
+          <div class="list-container" style="margin-top: 15px;">
+             <div class="empty-state" style="padding: 40px 10px;">
+              <p>Drag tasks here or create new ones.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IN PROGRESS Column -->
+        <div class="card-section card" style="padding: 20px; background: #fffbeb; border: 1px dashed #fcd34d; box-shadow: none;">
+          <div class="section-header" style="border-bottom: 1px solid #fde68a; padding-bottom: 15px;">
+            <h3 style="color: #d97706;">In Progress</h3>
+          </div>
+          <div class="list-container" style="margin-top: 15px;">
+             <div class="empty-state" style="padding: 40px 10px;">
+              <p>No tasks currently in progress.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DONE Column -->
+        <div class="card-section card" style="padding: 20px; background: #f0fdf4; border: 1px dashed #6ee7b7; box-shadow: none;">
+          <div class="section-header" style="border-bottom: 1px solid #a7f3d0; padding-bottom: 15px;">
+            <h3 style="color: #059669;">Done</h3>
+          </div>
+          <div class="list-container" style="margin-top: 15px;">
+             <div class="empty-state" style="padding: 40px 10px;">
+              <p>Completed tasks will move here.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
